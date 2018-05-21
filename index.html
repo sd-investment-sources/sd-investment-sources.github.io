@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+</head>
 <body>
 	<table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th>Name of Institution</th><th>Private (1)  | Public (2) </th><th> Member of roof Institution</th><th>Legal status</th><th>HQ addresse</th><th>Weblink</th><th>Support for PUB </th><th>Support for PRIV</th><th>Loans yes\no</th><th>Loans Info</th><th>Bonds YN</th><th>Bonds Info</th><th>Micro lowns Y/N</th><th>Micro lowns IInfo</th><th>Cash & Investments Y/N</th><th>Cash&Investment Info </th><th>Promisory notes Y/N</th><th>Promisory notes Info</th><th>Contributions, recievables, aid Y/N</th><th>Contributions, recievables aid Info</th><th>Equity y\n</th><th>Equity Info</th><th>Procurement Y/N</th><th>Procurement Info</th><th>Guaranties to Promote trade y\n</th><th>Guaranties to Promote trade Info</th><th>Equity y\n</th><th>Equity Info</th><th>Procurement Y/N</th><th>Procurement Info</th><th>Application process </th><th>Specialisation </th></tr></thead><tbody>
@@ -63,6 +66,23 @@
  <tr><td>Alphamundi</td><td>Priv</td><td>&nbsp;</td><td>AlphaMundi Group Ltd</td><td>Avenue du Bouchet 17, 1209 Genève, Switzerland</td><td>https://www.alphamundi.ch/</td><td>Yes</td><td>Yes</td><td>Yes</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Yes</td><td>&nbsp;</td><td>Yes</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Yes</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Yes</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Impact investment oriented </td></tr>
  <tr><td>Fondo de Inversion Social (FIS)</td><td>Priv</td><td>Ameris Capital</td><td>Fund</td><td>Avda. El Golf 82, piso 5, Las Condes - Santiago de Chile</td><td>http://fondoinversionsocial.cl/english-version/</td><td>Yes</td><td>Yes</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Yes</td><td>Impact investment</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Chile oriented Impact Investment fund</td></tr>
 </tbody></table>
+<script>
+ var filtersConfig = {
+        base_path: 'tablefilter/',
+        auto_filter: {
+            delay: 1100 //milliseconds
+        },
+        filters_row_index: 1,
+        state: true,
+        alternate_rows: true,
+        rows_counter: true,
+        btn_reset: true,
+        status_bar: true,
+        msg_filter: 'Filtering...'
+    };
+    var tf = new TableFilter('demo', filtersConfig);
+    tf.init();
+</script>
 </body>
 </html>
 
